@@ -18,11 +18,6 @@ public class Main {
        int i=0,j=0;
        while(i<n && j<m){
         if(arr[i]%2!=0 && arr2[j]%2!=0){
-       int i=0,j=0;
-       while(i<n && j<m){
-        if(arr[i]%2!=0 && arr2[j]%2!=0){
-            if(arr[i]==arr2[j]){
-                al.add(arr[i]);
                 i++;
                 j++;
             }
@@ -44,3 +39,8 @@ public class Main {
        }
        if(al.isEmpty()){
         System.out.print("No common odd elements found.");
+       }
+       else{
+      for(int num:al){
+        System.out.print(num+" ");
+      }

@@ -43,3 +43,10 @@ public class Main {
         System.out.print("No common odd elements found.");
        }
        else{
+      for(int num:al){
+        System.out.print(num+" ");
+      }
+      }
+    }
+}
+//test

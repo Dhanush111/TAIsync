@@ -55,6 +55,82 @@ public class Main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            else {
+                j++;
+            }
+        }
+        else{
+            if(arr[i]%2==0){
+                i++;
+            }
+            if(arr2[j]%2==0){
+                j++;
+            }
+        }
+       }
+       if(al.isEmpty()){
+        System.out.print("No common odd elements found.");
+       }
        else{
       for(int num:al){
         System.out.print(num+" ");

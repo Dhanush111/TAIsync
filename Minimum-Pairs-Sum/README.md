@@ -12,23 +12,35 @@ Output Format
 
 Print the minimum sum among all the pairs of elements in the array.
 
-Sample Inputs & Outputs
 
-Sample Input 1
+
+### Sample Inputs & Outputs
+
+
+
+### ### Sample Input
 6
 5 9 2 8 3 7
 
-Sample Output 1
+
+
+### ### Sample Output
 5
 
-Sample Input 2
+
+
+### ### Sample Input
 7
 10 5 8 2 6 1 4
 
-Sample Output 2
+
+
+### ### Sample Output
 3
 
-Constraints
+
+
+### ### Constraints
 
 - 2 ≤ N ≤ 10^5 (the size of the array) 
 

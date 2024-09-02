@@ -1,6 +1,4 @@
-import java.util.Scanner;
-import java.util.ArrayList;
-import java.util.Collections;
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -14,23 +12,24 @@ public class Main {
         for(int i=0;i<m;i++){
             arr2[i]=scanner.nextInt();
         }
-        ArrayList <Integer> al=new ArrayList<>();
-        int i=0,j=arr2.length-1;
-        while(i<arr.length && j>=0){
-            if(arr[i]==arr2[j]){
-                al.add(arr[i]);
-                i++;
-                j--;
-            }
-            else if(arr[i]<arr2[j]){
-                i++;
-            }
-            else{
-                j--;
-            }
-        }
-        for(int num:al){
-            System.out.print(num+" ");
-        }
+        repEle(arr,arr2);
     }
+    static void repEle(int[] arr, int[] arr2){
+        // List<Integer> al=new ArrayList<>();
+        int i=arr.length-1,j=0;
+        while(i>=0 && j<arr2.length){
+            if(arr[i]==arr2[j]){
+                System.out.print(arr2[j]+" ");
+                i--;
+                j++;
+            }else if(arr[i]<arr2[j]){
+                i--;
+            }else{
+                j++;
+            }
+    }
+        // for(int a:al){
+        //     System.out.print(a+" ");
+        // }
+}
 }

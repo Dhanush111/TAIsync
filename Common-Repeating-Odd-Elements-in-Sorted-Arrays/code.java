@@ -43,29 +43,3 @@ public class Main {
         System.out.print("No common odd elements found.");
        }
        else{
-        if(arr[i]%2!=0 && arr2[j]%2!=0){
-            if(arr[i]==arr2[j]){
-                al.add(arr[i]);
-                i++;
-                j++;
-            }
-            else if(arr[i]<arr2[j]){
-                i++;
-            }
-            else {
-                j++;
-            }
-        }
-        else{
-            if(arr[i]%2==0){
-                i++;
-            }
-            if(arr2[j]%2==0){
-                j++;
-            }
-        }
-       }
-       if(al.isEmpty()){
-        System.out.print("No common odd elements found.");
-       }
-       else{

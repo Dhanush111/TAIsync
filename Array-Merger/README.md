@@ -1,4 +1,3 @@
-
 # Array Merger
 
 Problem
@@ -91,14 +90,3 @@ Constraints
 
 
 
-
-
-**Sample Inputs & Outputs**
-
-
-
-**Constraints**
-
-```
-No constraints provided
-```

@@ -18,15 +18,31 @@ public class Main {
        int i=0,j=0;
        while(i<n && j<m){
         if(arr[i]%2!=0 && arr2[j]%2!=0){
+            if(arr[i]==arr2[j]){
+                al.add(arr[i]);
+                i++;
+                j++;
+            }
+            else if(arr[i]<arr2[j]){
+                i++;
+            }
+            else {
+                j++;
+            }
         }
-        int m=scanner.nextInt();
-        int[] arr2=new int[m];
-        for(int j=0;j<m;j++){
-            arr2[j]=scanner.nextInt();
+        else{
+            if(arr[i]%2==0){
+                i++;
+            }
+            if(arr2[j]%2==0){
+                j++;
+            }
         }
-       ArrayList<Integer> al=new ArrayList<>();
-       int i=0,j=0;
-       while(i<n && j<m){
+       }
+       if(al.isEmpty()){
+        System.out.print("No common odd elements found.");
+       }
+       else{
         if(arr[i]%2!=0 && arr2[j]%2!=0){
             if(arr[i]==arr2[j]){
                 al.add(arr[i]);
@@ -41,26 +57,15 @@ public class Main {
             }
         }
         else{
-        }
-        int m=scanner.nextInt();
-        int[] arr2=new int[m];
-        for(int j=0;j<m;j++){
-            arr2[j]=scanner.nextInt();
-        }
-       ArrayList<Integer> al=new ArrayList<>();
-       int i=0,j=0;
-       while(i<n && j<m){
-        if(arr[i]%2!=0 && arr2[j]%2!=0){
-            if(arr[i]==arr2[j]){
-                al.add(arr[i]);
-                i++;
-                j++;
-            }
-            else if(arr[i]<arr2[j]){
+            if(arr[i]%2==0){
                 i++;
             }
-            else {
+            if(arr2[j]%2==0){
                 j++;
             }
         }
-        else{
+       }
+       if(al.isEmpty()){
+        System.out.print("No common odd elements found.");
+       }
+       else{

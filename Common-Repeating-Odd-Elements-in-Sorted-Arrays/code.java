@@ -115,6 +115,32 @@ public class Main {
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                i++;
+                j++;
+            }
+            else if(arr[i]<arr2[j]){
+                i++;
+            }
             else {
                 j++;
             }
@@ -135,7 +161,3 @@ public class Main {
       for(int num:al){
         System.out.print(num+" ");
       }
-      }
-    }
-}
-//test

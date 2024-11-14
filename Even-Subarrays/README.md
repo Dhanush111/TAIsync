@@ -6,7 +6,7 @@ Problem
 
 
 
-Print all possible subarrays whose sum is even.
+Print all possible subarrays of even size.
 
 
 
@@ -26,7 +26,7 @@ Output Format
 
 
 
-Print all the possible subarrays whose sum is even, separated by a space. If no such subarrays exist, print "None".
+Print all the possible subarrays of size even, separated by a space. If no such subarrays exist, print "None".
 
 
 
@@ -46,13 +46,13 @@ Sample Input 1
 
 Sample Output 1
 
-2 
+1 2 
 
-4 
+2 3 
 
-1 2 3 
+3 4 
 
-3 4 5 
+4 5 
 
 1 2 3 4 
 
@@ -76,13 +76,13 @@ Sample Input 2
 
 Sample Output 2
 
--2 
+-1 -2
 
--4 
+-2 -3
 
--1 -2 -3 
+-3 -4
 
--1 -2 -3 -4 
+-1 -2 -3 -4
 
 
 

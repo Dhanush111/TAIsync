@@ -8,20 +8,20 @@ public class Main {
         arr[i]=scanner.nextInt();
        }
        int count=0;
-       boolean dup=false;
        Set<Integer> hs=new HashSet<>();
+       boolean hasDup=false;
        for(int i=0;i<n;i++){
         if(hs.contains(arr[i])){
+           hasDup=true;
+        }else{
+        hs.add(arr[i]);
+        }
+        if(hasDup){
             count++;
             hs.clear();
-            dup=false;
+            hasDup=false;
         }
-        hs.add(arr[i]);
-        dup=true;
-       }
-       if(!dup){
-       System.out.print(count);
-       }
-       System.out.print(count);
+       }  
+       System.out.print(count);   
     }
 }

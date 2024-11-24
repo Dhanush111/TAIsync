@@ -13,9 +13,9 @@ public class Main {
         for(int a:arr){
             hm.put(a,(hm.getOrDefault(a,0)+1));
         } 
-        int count=0;
-        for(int a:hm.values()){
-            count+=a/2;
+        int count=0;   
+        for(int pair:hm.values()){
+            count+=pair/2;
         }
         System.out.print(count);
     }

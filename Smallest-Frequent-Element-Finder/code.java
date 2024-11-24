@@ -1,4 +1,4 @@
-import java.util.LinkedHashMap;
+import java.util.TreeMap;
 import java.util.Map;
 import java.util.Scanner;
 import java.util.Set;
@@ -11,7 +11,7 @@ public class Main {
         for (int i = 0; i < n; i++) {
             arr[i] = scanner.nextInt();
         }
-        Map<Integer,Integer> map=new LinkedHashMap<>();
+        Map<Integer,Integer> map=new TreeMap<>();
         for(int a:arr){
             map.put(a,(map.getOrDefault(a,0))+1);
         }

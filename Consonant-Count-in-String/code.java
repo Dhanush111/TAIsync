@@ -1,14 +1,16 @@
-import java.util.Scanner;
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         String input = scanner.nextLine();
+        HashSet<Character> hs=new HashSet<>();
+        for(Character c:"aeiouAEIOU".toCharArray()){
+            hs.add(c);
+        }
         int count=0;
         for(int i=0;i<input.length();i++){
-            char ch=input.charAt(i);
-            if(!(ch=='a'|| ch=='e'|| ch=='i'|| ch=='o'|| ch=='u'||
-            ch=='A'|| ch=='E'|| ch=='I'|| ch=='O'|| ch=='U') && Character.isLetter(ch) ){
-                count++;
+            if(Character.isLetter(input.charAt(i)) && !(hs.contains(input.charAt(i)))){
+                    count++;
             }
         }
         System.out.print(count);
